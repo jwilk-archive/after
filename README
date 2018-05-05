@@ -1,0 +1,12 @@
+.. code:: console
+
+   $ after --help
+   Usage: after TIME COMMAND [ARGS...]
+
+This is syntactic sugar for:
+
+.. code:: console
+
+   $ sleep TIME && COMMAND [ARGS...]
+
+.. vim:ft=rst ts=3 sts=3 sw=3 et
