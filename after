@@ -14,7 +14,7 @@ usage()
 [ $# -ge 2 ] || usage
 time="$1"
 shift
-[ "${time#[0-9]}" != "$time" ] || usage
+[ "${time#[[:digit:]]}" != "$time" ] || usage
 sleep "$time"
 exec "$@"
 
